@@ -1,0 +1,49 @@
+Evaluation — scene: scene-0103
+
+Candidate rows: 587
+Accuracy: 150/587 = 25.553663%
+Macro F1: 17.206481%
+Macro recall: 41.394831%
+Minority macro recall: 47.415330%
+
+PER-CLASS RESULTS
+
+Class: vehicle
+Reference rows: 540
+Predicted rows: 134
+TP=126 | FP=8 | FN=414 | TN=39
+Precision: 126/134 = 94.029851%
+Recall: 126/540 = 23.333333%
+F1: 252/674 = 37.388724%
+Specificity: 39/47 = 82.978723%
+
+Class: pedestrian
+Reference rows: 34
+Predicted rows: 118
+TP=19 | FP=99 | FN=15 | TN=454
+Precision: 19/118 = 16.101695%
+Recall: 19/34 = 55.882353%
+F1: 38/152 = 25.000000%
+Specificity: 454/553 = 82.097649%
+
+Class: two_wheeler
+Reference rows: 11
+Predicted rows: 136
+TP=4 | FP=132 | FN=7 | TN=444
+Precision: 4/136 = 2.941176%
+Recall: 4/11 = 36.363636%
+F1: 8/147 = 5.442177%
+Specificity: 444/576 = 77.083333%
+
+Class: obstacle
+Reference rows: 2
+Predicted rows: 199
+TP=1 | FP=198 | FN=1 | TN=387
+Precision: 1/199 = 0.502513%
+Recall: 1/2 = 50.000000%
+F1: 2/201 = 0.995025%
+Specificity: 387/585 = 66.153846%
+
+Fractions preserve exact counts; percentages are rounded.
+These metrics describe labeled candidates, not physical object detection recall.
+Reference labels are provisional geometric associations.

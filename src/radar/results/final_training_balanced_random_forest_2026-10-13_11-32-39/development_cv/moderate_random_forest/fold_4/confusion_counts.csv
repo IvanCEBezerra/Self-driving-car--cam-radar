@@ -1,0 +1,5 @@
+reference_class,vehicle,pedestrian,two_wheeler,obstacle
+vehicle,450,4,3,0
+pedestrian,58,26,0,2
+two_wheeler,10,0,1,0
+obstacle,50,0,0,0

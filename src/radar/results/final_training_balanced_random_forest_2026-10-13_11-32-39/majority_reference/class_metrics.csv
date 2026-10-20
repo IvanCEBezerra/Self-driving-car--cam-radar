@@ -1,0 +1,5 @@
+class,reference_count,predicted_count,TP,FP,FN,TN,precision_pct,precision_exact,recall_pct,recall_exact,f1_pct,f1_exact,specificity_pct,specificity_exact,false_positive_rate_pct,false_negative_rate_pct
+vehicle,801,875,801,74,0,0,91.54285714285714,801/875 = 91.542857%,100.0,801/801 = 100.000000%,95.58472553699283,1602/1676 = 95.584726%,0.0,0/74 = 0.000000%,100.0,0.0
+pedestrian,50,0,0,0,50,825,,N/A,0.0,0/50 = 0.000000%,0.0,0/50 = 0.000000%,100.0,825/825 = 100.000000%,0.0,100.0
+two_wheeler,22,0,0,0,22,853,,N/A,0.0,0/22 = 0.000000%,0.0,0/22 = 0.000000%,100.0,853/853 = 100.000000%,0.0,100.0
+obstacle,2,0,0,0,2,873,,N/A,0.0,0/2 = 0.000000%,0.0,0/2 = 0.000000%,100.0,873/873 = 100.000000%,0.0,100.0

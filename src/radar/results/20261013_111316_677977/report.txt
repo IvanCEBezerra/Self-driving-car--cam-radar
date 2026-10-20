@@ -1,0 +1,60 @@
+FINAL RADAR TRAINING REPORT
+
+Model: balanced_random_forest
+Processed samples: 404
+Total candidates: 37408
+Labeled candidates: 3437
+Unlabeled candidates: 33971
+
+RESERVED-SCENE EVALUATION
+Model: evaluation_model.joblib
+Training examples: 2562
+Evaluation examples: 875
+Accuracy: 27.0%
+Majority-class reference accuracy: 91.5%
+
+              precision    recall  f1-score   support
+
+     vehicle      0.957     0.247     0.393       801
+  pedestrian      0.166     0.640     0.263        50
+ two_wheeler      0.030     0.227     0.053        22
+    obstacle      0.003     0.500     0.006         2
+
+    accuracy                          0.270       875
+   macro avg      0.289     0.404     0.179       875
+weighted avg      0.886     0.270     0.376       875
+
+PER-CLASS DIAGNOSTICS
+vehicle: 198/801 correctly classified candidate rows; 74 annotated instances; precision=0.957; recall=0.247.
+pedestrian: 32/50 correctly classified candidate rows; 21 annotated instances; precision=0.166; recall=0.640.
+two_wheeler: 5/22 correctly classified candidate rows; 8 annotated instances; precision=0.030; recall=0.227.
+obstacle: 1/2 correctly classified candidate rows; 1 annotated instances; precision=0.003; recall=0.500.
+Few annotated instances: generalization evidence is limited.
+
+FINAL MODEL
+File: final_model.joblib
+Training examples: 3437
+Training scope: all ten mini scenes.
+The reserved-scene report does not independently evaluate this refitted model.
+
+LIMITATIONS
+- Labels are provisional XY geometric associations.
+- Candidate rows can repeat the same physical object.
+- These metrics are classification metrics, not physical detection recall.
+- Unlabeled candidates were preserved but excluded from supervised training.
+- A predicted class does not confirm that a candidate is a real object.
+- Class scores are not calibrated object-existence confidence.
+- Balanced sampling can omit majority examples from individual trees.
+- Reserved mini scenes were inspected in the earlier LIVE project.
+- This is an internal MVP evaluation, not a new external validation.
+- Feature importance is impurity-based and is not causal evidence.
+
+ARTIFACTS
+- final_model.joblib: final pipeline, classes and feature order.
+- evaluation_model.joblib: pipeline used for reserved-scene metrics.
+- dataset_candidates.csv: features and provenance of every candidate.
+- evaluation_predictions.csv: references, predictions and class scores.
+- evaluation_metrics.json: metrics, confusion matrix and candidate-kind reports.
+- dataset_summary.json: class diversity, categories and missing features.
+- training_metadata.json: settings, versions and fingerprints.
+- charts/: confusion matrices, metrics, distribution and feature importance.

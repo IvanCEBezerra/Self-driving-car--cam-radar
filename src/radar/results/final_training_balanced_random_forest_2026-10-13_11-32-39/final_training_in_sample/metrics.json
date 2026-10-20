@@ -1,0 +1,119 @@
+{
+  "candidate_rows": 3437,
+  "correct_predictions": 1652,
+  "accuracy_pct": 48.06517311608961,
+  "accuracy_exact": "1652/3437 = 48.065173%",
+  "macro_f1_pct": 33.11162315979471,
+  "macro_recall_pct": 70.89138455845554,
+  "minority_macro_recall_pct": 79.86216021406638,
+  "confusion_class_order": [
+    "vehicle",
+    "pedestrian",
+    "two_wheeler",
+    "obstacle"
+  ],
+  "confusion_matrix": [
+    [
+      1344,
+      569,
+      516,
+      627
+    ],
+    [
+      9,
+      164,
+      11,
+      14
+    ],
+    [
+      2,
+      8,
+      48,
+      4
+    ],
+    [
+      3,
+      16,
+      6,
+      96
+    ]
+  ],
+  "classes": [
+    {
+      "class": "vehicle",
+      "reference_count": 3056,
+      "predicted_count": 1358,
+      "TP": 1344,
+      "FP": 14,
+      "FN": 1712,
+      "TN": 367,
+      "precision_pct": 98.96907216494846,
+      "precision_exact": "1344/1358 = 98.969072%",
+      "recall_pct": 43.97905759162304,
+      "recall_exact": "1344/3056 = 43.979058%",
+      "f1_pct": 60.897145446307206,
+      "f1_exact": "2688/4414 = 60.897145%",
+      "specificity_pct": 96.3254593175853,
+      "specificity_exact": "367/381 = 96.325459%",
+      "false_positive_rate_pct": 3.674540682414698,
+      "false_negative_rate_pct": 56.02094240837696
+    },
+    {
+      "class": "pedestrian",
+      "reference_count": 198,
+      "predicted_count": 757,
+      "TP": 164,
+      "FP": 593,
+      "FN": 34,
+      "TN": 2646,
+      "precision_pct": 21.66446499339498,
+      "precision_exact": "164/757 = 21.664465%",
+      "recall_pct": 82.82828282828282,
+      "recall_exact": "164/198 = 82.828283%",
+      "f1_pct": 34.345549738219894,
+      "f1_exact": "328/955 = 34.345550%",
+      "specificity_pct": 81.69188020994135,
+      "specificity_exact": "2646/3239 = 81.691880%",
+      "false_positive_rate_pct": 18.30811979005866,
+      "false_negative_rate_pct": 17.171717171717173
+    },
+    {
+      "class": "two_wheeler",
+      "reference_count": 62,
+      "predicted_count": 581,
+      "TP": 48,
+      "FP": 533,
+      "FN": 14,
+      "TN": 2842,
+      "precision_pct": 8.261617900172118,
+      "precision_exact": "48/581 = 8.261618%",
+      "recall_pct": 77.41935483870968,
+      "recall_exact": "48/62 = 77.419355%",
+      "f1_pct": 14.930015552099533,
+      "f1_exact": "96/643 = 14.930016%",
+      "specificity_pct": 84.2074074074074,
+      "specificity_exact": "2842/3375 = 84.207407%",
+      "false_positive_rate_pct": 15.792592592592593,
+      "false_negative_rate_pct": 22.580645161290324
+    },
+    {
+      "class": "obstacle",
+      "reference_count": 121,
+      "predicted_count": 741,
+      "TP": 96,
+      "FP": 645,
+      "FN": 25,
+      "TN": 2671,
+      "precision_pct": 12.955465587044534,
+      "precision_exact": "96/741 = 12.955466%",
+      "recall_pct": 79.33884297520662,
+      "recall_exact": "96/121 = 79.338843%",
+      "f1_pct": 22.273781902552205,
+      "f1_exact": "192/862 = 22.273782%",
+      "specificity_pct": 80.54885404101327,
+      "specificity_exact": "2671/3316 = 80.548854%",
+      "false_positive_rate_pct": 19.451145958986732,
+      "false_negative_rate_pct": 20.66115702479339
+    }
+  ]
+}

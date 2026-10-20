@@ -1,0 +1,137 @@
+{
+  "created_at": "2026-10-13T11:32:39.890614-03:00",
+  "selected_model": "balanced_random_forest",
+  "selection_priority": [
+    "minority macro recall",
+    "macro F1",
+    "vehicle recall"
+  ],
+  "selection_results": [
+    {
+      "model": "random_forest",
+      "accuracy_pct": 56.28415300546448,
+      "macro_f1_pct": 28.461817585088873,
+      "macro_recall_pct": 38.70813395472649,
+      "minority_macro_recall_pct": 31.891702626996743,
+      "vehicle_recall_pct": 59.15742793791574
+    },
+    {
+      "model": "balanced_random_forest",
+      "accuracy_pct": 48.28259172521468,
+      "macro_f1_pct": 25.967973886261277,
+      "macro_recall_pct": 39.32289759854322,
+      "minority_macro_recall_pct": 35.771254447725035,
+      "vehicle_recall_pct": 49.97782705099778
+    },
+    {
+      "model": "moderate_random_forest",
+      "accuracy_pct": 84.54332552693208,
+      "macro_f1_pct": 33.25735429138591,
+      "macro_recall_pct": 32.15142127444854,
+      "minority_macro_recall_pct": 11.516011810129458,
+      "vehicle_recall_pct": 94.05764966740577
+    }
+  ],
+  "processed_samples": 404,
+  "total_candidates": 37408,
+  "development_labeled_examples": 2562,
+  "reserved_labeled_examples": 875,
+  "final_training_examples": 3437,
+  "unlabeled_candidates": 33971,
+  "development_scenes": [
+    "scene-0061",
+    "scene-0553",
+    "scene-0655",
+    "scene-0757",
+    "scene-0796",
+    "scene-1077",
+    "scene-1094",
+    "scene-1100"
+  ],
+  "reserved_scenes": [
+    "scene-0103",
+    "scene-0916"
+  ],
+  "final_training_scenes": [
+    "scene-0061",
+    "scene-0553",
+    "scene-0655",
+    "scene-0757",
+    "scene-0796",
+    "scene-1077",
+    "scene-1094",
+    "scene-1100",
+    "scene-0103",
+    "scene-0916"
+  ],
+  "feature_columns": [
+    "num_points",
+    "extent_x",
+    "extent_y",
+    "mean_rcs",
+    "mean_compensated_speed",
+    "num_rcs_points",
+    "num_velocity_points",
+    "quality_fraction"
+  ],
+  "final_classifier_parameters": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 8,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "replacement": true,
+    "sampling_strategy": "all",
+    "verbose": 0,
+    "warm_start": false
+  },
+  "final_imputation_values": [
+    1.0,
+    0.0,
+    0.0,
+    4.0,
+    0.188710850686616,
+    1.0,
+    1.0,
+    0.7307692307692307
+  ],
+  "dataset_csv_sha256": "0f58bb271165f4662dd052933be8277e3e051212cd7d13970c616c93ceff0380",
+  "source_hashes": {
+    "___init___.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit.py": "a9c7c9e460cb3ac3f385005ae5aff530d1b1f0060c6555c73f87a0ed648dae23",
+    "clustering.py": "bf6d7a6b575f5e2770bad9bb1889a410d81368b8564361f33a553d63a56b00c8",
+    "dataset.py": "8c5e69894ab7b03ae9d690701db0bb8b64d4c7779e387efc8535c5625b5c616a",
+    "features.py": "adbf4c070926951499adb87f3f91cc105986c08d1c42eaacb9eb90a31ec15d80",
+    "filters.py": "74e90172bffa6f8cf1ef2efe6d34bbc826768d8495dc53b9dca9f1998ae0d466",
+    "final_train.py": "f8b6829a437e43c41acfb673b7fe680ed5d0c1e84d1867526b512e5c6118565e",
+    "labels.py": "57cb9ff5aa53a1238d1fef00bcc6b9ef520c5c0650d81bb7d78da95e4c43ec6b",
+    "model.py": "fe439f06df16277adb2e5c710f96661fb434c4d55332353a0c79f1d25ea34f38",
+    "parameter_search.py": "e0ef330b0f383022df8a3adfd80461ddbbcc945965213342e57e75de8fac10fa",
+    "reader.py": "5d7339ec8bbd30ac99c3e622244c86f48cd45037a4cc67f2870bdc315d1f8239",
+    "split.py": "73949e1da1362ea1b22d4dfa3570492646c8491a3f5bc9f0e9579b3caa23a105",
+    "validation.py": "9f81e1f67fd06592a969fdbd524967148ea035def0ef7732542c543a8ceff2bb",
+    "visualization.py": "12ef9ea6825d7bc3abadcd3f9250f04506959c6e46323664dbc648d7ea3f3aad"
+  },
+  "package_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "imbalanced-learn": "0.14.2",
+    "nuscenes-devkit": "1.2.0",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "instance_weighting": false
+}

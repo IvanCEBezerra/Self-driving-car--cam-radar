@@ -1,0 +1,139 @@
+{
+  "total_candidates": 37408,
+  "status_counts": {
+    "ambiguous": 82,
+    "labeled": 3437,
+    "no_box_support": 33691,
+    "unsupported_category": 75,
+    "weak_support": 123
+  },
+  "classes": {
+    "vehicle": {
+      "examples": 3056,
+      "isolated_examples": 1776,
+      "scenes": 10,
+      "instances": 277,
+      "categories": {
+        "vehicle.truck": 347,
+        "vehicle.car": 2021,
+        "vehicle.construction": 175,
+        "vehicle.bus.rigid": 401,
+        "vehicle.bus.bendy": 99,
+        "vehicle.trailer": 13
+      },
+      "missing_features": {
+        "num_points": 0,
+        "extent_x": 0,
+        "extent_y": 0,
+        "mean_rcs": 0,
+        "mean_compensated_speed": 832,
+        "num_rcs_points": 0,
+        "num_velocity_points": 0,
+        "quality_fraction": 0
+      },
+      "scene_names": [
+        "scene-0061",
+        "scene-0103",
+        "scene-0553",
+        "scene-0655",
+        "scene-0757",
+        "scene-0796",
+        "scene-0916",
+        "scene-1077",
+        "scene-1094",
+        "scene-1100"
+      ]
+    },
+    "pedestrian": {
+      "examples": 198,
+      "isolated_examples": 149,
+      "scenes": 8,
+      "instances": 61,
+      "categories": {
+        "human.pedestrian.adult": 192,
+        "human.pedestrian.construction_worker": 3,
+        "human.pedestrian.child": 1,
+        "human.pedestrian.police_officer": 2
+      },
+      "missing_features": {
+        "num_points": 0,
+        "extent_x": 0,
+        "extent_y": 0,
+        "mean_rcs": 0,
+        "mean_compensated_speed": 65,
+        "num_rcs_points": 0,
+        "num_velocity_points": 0,
+        "quality_fraction": 0
+      },
+      "scene_names": [
+        "scene-0061",
+        "scene-0103",
+        "scene-0553",
+        "scene-0655",
+        "scene-0796",
+        "scene-0916",
+        "scene-1094",
+        "scene-1100"
+      ]
+    },
+    "two_wheeler": {
+      "examples": 62,
+      "isolated_examples": 45,
+      "scenes": 9,
+      "instances": 21,
+      "categories": {
+        "vehicle.motorcycle": 35,
+        "vehicle.bicycle": 27
+      },
+      "missing_features": {
+        "num_points": 0,
+        "extent_x": 0,
+        "extent_y": 0,
+        "mean_rcs": 0,
+        "mean_compensated_speed": 12,
+        "num_rcs_points": 0,
+        "num_velocity_points": 0,
+        "quality_fraction": 0
+      },
+      "scene_names": [
+        "scene-0061",
+        "scene-0103",
+        "scene-0553",
+        "scene-0757",
+        "scene-0796",
+        "scene-0916",
+        "scene-1077",
+        "scene-1094",
+        "scene-1100"
+      ]
+    },
+    "obstacle": {
+      "examples": 121,
+      "isolated_examples": 78,
+      "scenes": 6,
+      "instances": 41,
+      "categories": {
+        "movable_object.barrier": 113,
+        "movable_object.trafficcone": 8
+      },
+      "missing_features": {
+        "num_points": 0,
+        "extent_x": 0,
+        "extent_y": 0,
+        "mean_rcs": 0,
+        "mean_compensated_speed": 38,
+        "num_rcs_points": 0,
+        "num_velocity_points": 0,
+        "quality_fraction": 0
+      },
+      "scene_names": [
+        "scene-0061",
+        "scene-0103",
+        "scene-0553",
+        "scene-0655",
+        "scene-0757",
+        "scene-1077"
+      ]
+    }
+  }
+}

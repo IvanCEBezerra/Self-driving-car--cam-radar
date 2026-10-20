@@ -1,0 +1,158 @@
+{
+  "evaluation_scope": "Labeled candidates in mini_val scenes",
+  "evaluation_model": "evaluation_model.joblib",
+  "accuracy": 0.26971428571428574,
+  "majority_reference_class": "vehicle",
+  "majority_reference_accuracy": 0.9154285714285715,
+  "classification_report": {
+    "vehicle": {
+      "precision": 0.9565217391304348,
+      "recall": 0.24719101123595505,
+      "f1-score": 0.39285714285714285,
+      "support": 801.0
+    },
+    "pedestrian": {
+      "precision": 0.16580310880829016,
+      "recall": 0.64,
+      "f1-score": 0.26337448559670784,
+      "support": 50.0
+    },
+    "two_wheeler": {
+      "precision": 0.029940119760479042,
+      "recall": 0.22727272727272727,
+      "f1-score": 0.05291005291005291,
+      "support": 22.0
+    },
+    "obstacle": {
+      "precision": 0.003246753246753247,
+      "recall": 0.5,
+      "f1-score": 0.0064516129032258064,
+      "support": 2.0
+    },
+    "accuracy": 0.26971428571428574,
+    "macro avg": {
+      "precision": 0.2888779302364893,
+      "recall": 0.4036159346271706,
+      "f1-score": 0.17889832356678237,
+      "support": 875.0
+    },
+    "weighted avg": {
+      "precision": 0.8858619938572764,
+      "recall": 0.26971428571428574,
+      "f1-score": 0.3760276801122679,
+      "support": 875.0
+    }
+  },
+  "confusion_matrix_class_order": [
+    "vehicle",
+    "pedestrian",
+    "two_wheeler",
+    "obstacle"
+  ],
+  "confusion_matrix": [
+    [
+      198,
+      157,
+      155,
+      291
+    ],
+    [
+      5,
+      32,
+      7,
+      6
+    ],
+    [
+      3,
+      4,
+      5,
+      10
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "by_candidate_kind": {
+    "cluster": {
+      "vehicle": {
+        "precision": 0.9597701149425287,
+        "recall": 0.5301587301587302,
+        "f1-score": 0.6830265848670757,
+        "support": 315.0
+      },
+      "pedestrian": {
+        "precision": 0.3170731707317073,
+        "recall": 0.65,
+        "f1-score": 0.4262295081967213,
+        "support": 20.0
+      },
+      "two_wheeler": {
+        "precision": 0.07142857142857142,
+        "recall": 0.14285714285714285,
+        "f1-score": 0.09523809523809523,
+        "support": 7.0
+      },
+      "obstacle": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "accuracy": 0.5292397660818714,
+      "macro avg": {
+        "precision": 0.33706796427570185,
+        "recall": 0.33075396825396824,
+        "f1-score": 0.30112354707547306,
+        "support": 342.0
+      },
+      "weighted avg": {
+        "precision": 0.9040030690688032,
+        "recall": 0.5292397660818714,
+        "f1-score": 0.655978453402719,
+        "support": 342.0
+      }
+    },
+    "isolated_return": {
+      "vehicle": {
+        "precision": 0.9393939393939394,
+        "recall": 0.06378600823045268,
+        "f1-score": 0.11946050096339114,
+        "support": 486.0
+      },
+      "pedestrian": {
+        "precision": 0.125,
+        "recall": 0.6333333333333333,
+        "f1-score": 0.2087912087912088,
+        "support": 30.0
+      },
+      "two_wheeler": {
+        "precision": 0.026143790849673203,
+        "recall": 0.26666666666666666,
+        "f1-score": 0.047619047619047616,
+        "support": 15.0
+      },
+      "obstacle": {
+        "precision": 0.005128205128205128,
+        "recall": 0.5,
+        "f1-score": 0.01015228426395939,
+        "support": 2.0
+      },
+      "accuracy": 0.10318949343339587,
+      "macro avg": {
+        "precision": 0.2739164838429544,
+        "recall": 0.36594650205761314,
+        "f1-score": 0.09650576040940173,
+        "support": 533.0
+      },
+      "weighted avg": {
+        "precision": 0.8643487201096737,
+        "recall": 0.10318949343339587,
+        "f1-score": 0.12205652910836394,
+        "support": 533.0
+      }
+    }
+  }
+}

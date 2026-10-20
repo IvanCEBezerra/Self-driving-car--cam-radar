@@ -1,0 +1,122 @@
+[
+  {
+    "scenario": "original",
+    "sensor": "radar",
+    "total": 94,
+    "available": 94,
+    "correct": 25,
+    "coverage": 100.0,
+    "correct_over_all": 26.595744680851062,
+    "accuracy_when_available": 26.595744680851062
+  },
+  {
+    "scenario": "original",
+    "sensor": "camera",
+    "total": 94,
+    "available": 61,
+    "correct": 61,
+    "coverage": 64.8936170212766,
+    "correct_over_all": 64.8936170212766,
+    "accuracy_when_available": 100.0
+  },
+  {
+    "scenario": "original",
+    "sensor": "fusion",
+    "total": 94,
+    "available": 94,
+    "correct": 74,
+    "coverage": 100.0,
+    "correct_over_all": 78.72340425531915,
+    "accuracy_when_available": 78.72340425531915
+  },
+  {
+    "scenario": "dark",
+    "sensor": "radar",
+    "total": 94,
+    "available": 94,
+    "correct": 25,
+    "coverage": 100.0,
+    "correct_over_all": 26.595744680851062,
+    "accuracy_when_available": 26.595744680851062
+  },
+  {
+    "scenario": "dark",
+    "sensor": "camera",
+    "total": 94,
+    "available": 61,
+    "correct": 60,
+    "coverage": 64.8936170212766,
+    "correct_over_all": 63.829787234042556,
+    "accuracy_when_available": 98.36065573770492
+  },
+  {
+    "scenario": "dark",
+    "sensor": "fusion",
+    "total": 94,
+    "available": 94,
+    "correct": 73,
+    "coverage": 100.0,
+    "correct_over_all": 77.65957446808511,
+    "accuracy_when_available": 77.65957446808511
+  },
+  {
+    "scenario": "blur",
+    "sensor": "radar",
+    "total": 94,
+    "available": 94,
+    "correct": 25,
+    "coverage": 100.0,
+    "correct_over_all": 26.595744680851062,
+    "accuracy_when_available": 26.595744680851062
+  },
+  {
+    "scenario": "blur",
+    "sensor": "camera",
+    "total": 94,
+    "available": 63,
+    "correct": 60,
+    "coverage": 67.02127659574468,
+    "correct_over_all": 63.829787234042556,
+    "accuracy_when_available": 95.23809523809524
+  },
+  {
+    "scenario": "blur",
+    "sensor": "fusion",
+    "total": 94,
+    "available": 94,
+    "correct": 71,
+    "coverage": 100.0,
+    "correct_over_all": 75.53191489361703,
+    "accuracy_when_available": 75.53191489361703
+  },
+  {
+    "scenario": "camera_unavailable",
+    "sensor": "radar",
+    "total": 94,
+    "available": 94,
+    "correct": 25,
+    "coverage": 100.0,
+    "correct_over_all": 26.595744680851062,
+    "accuracy_when_available": 26.595744680851062
+  },
+  {
+    "scenario": "camera_unavailable",
+    "sensor": "camera",
+    "total": 94,
+    "available": 0,
+    "correct": 0,
+    "coverage": 0.0,
+    "correct_over_all": 0.0,
+    "accuracy_when_available": null
+  },
+  {
+    "scenario": "camera_unavailable",
+    "sensor": "fusion",
+    "total": 94,
+    "available": 94,
+    "correct": 25,
+    "coverage": 100.0,
+    "correct_over_all": 26.595744680851062,
+    "accuracy_when_available": 26.595744680851062
+  }
+]

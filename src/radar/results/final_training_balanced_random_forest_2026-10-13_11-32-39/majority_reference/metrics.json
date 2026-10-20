@@ -1,0 +1,119 @@
+{
+  "candidate_rows": 875,
+  "correct_predictions": 801,
+  "accuracy_pct": 91.54285714285714,
+  "accuracy_exact": "801/875 = 91.542857%",
+  "macro_f1_pct": 23.89618138424821,
+  "macro_recall_pct": 25.0,
+  "minority_macro_recall_pct": 0.0,
+  "confusion_class_order": [
+    "vehicle",
+    "pedestrian",
+    "two_wheeler",
+    "obstacle"
+  ],
+  "confusion_matrix": [
+    [
+      801,
+      0,
+      0,
+      0
+    ],
+    [
+      50,
+      0,
+      0,
+      0
+    ],
+    [
+      22,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0
+    ]
+  ],
+  "classes": [
+    {
+      "class": "vehicle",
+      "reference_count": 801,
+      "predicted_count": 875,
+      "TP": 801,
+      "FP": 74,
+      "FN": 0,
+      "TN": 0,
+      "precision_pct": 91.54285714285714,
+      "precision_exact": "801/875 = 91.542857%",
+      "recall_pct": 100.0,
+      "recall_exact": "801/801 = 100.000000%",
+      "f1_pct": 95.58472553699283,
+      "f1_exact": "1602/1676 = 95.584726%",
+      "specificity_pct": 0.0,
+      "specificity_exact": "0/74 = 0.000000%",
+      "false_positive_rate_pct": 100.0,
+      "false_negative_rate_pct": 0.0
+    },
+    {
+      "class": "pedestrian",
+      "reference_count": 50,
+      "predicted_count": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 50,
+      "TN": 825,
+      "precision_pct": null,
+      "precision_exact": "N/A",
+      "recall_pct": 0.0,
+      "recall_exact": "0/50 = 0.000000%",
+      "f1_pct": 0.0,
+      "f1_exact": "0/50 = 0.000000%",
+      "specificity_pct": 100.0,
+      "specificity_exact": "825/825 = 100.000000%",
+      "false_positive_rate_pct": 0.0,
+      "false_negative_rate_pct": 100.0
+    },
+    {
+      "class": "two_wheeler",
+      "reference_count": 22,
+      "predicted_count": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 22,
+      "TN": 853,
+      "precision_pct": null,
+      "precision_exact": "N/A",
+      "recall_pct": 0.0,
+      "recall_exact": "0/22 = 0.000000%",
+      "f1_pct": 0.0,
+      "f1_exact": "0/22 = 0.000000%",
+      "specificity_pct": 100.0,
+      "specificity_exact": "853/853 = 100.000000%",
+      "false_positive_rate_pct": 0.0,
+      "false_negative_rate_pct": 100.0
+    },
+    {
+      "class": "obstacle",
+      "reference_count": 2,
+      "predicted_count": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2,
+      "TN": 873,
+      "precision_pct": null,
+      "precision_exact": "N/A",
+      "recall_pct": 0.0,
+      "recall_exact": "0/2 = 0.000000%",
+      "f1_pct": 0.0,
+      "f1_exact": "0/2 = 0.000000%",
+      "specificity_pct": 100.0,
+      "specificity_exact": "873/873 = 100.000000%",
+      "false_positive_rate_pct": 0.0,
+      "false_negative_rate_pct": 100.0
+    }
+  ]
+}

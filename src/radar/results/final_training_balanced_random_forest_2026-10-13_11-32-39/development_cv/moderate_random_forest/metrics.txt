@@ -1,0 +1,49 @@
+Development out-of-fold — moderate_random_forest
+
+Candidate rows: 2562
+Accuracy: 2166/2562 = 84.543326%
+Macro F1: 33.257354%
+Macro recall: 32.151421%
+Minority macro recall: 11.516012%
+
+PER-CLASS RESULTS
+
+Class: vehicle
+Reference rows: 2255
+Predicted rows: 2372
+TP=2121 | FP=251 | FN=134 | TN=56
+Precision: 2121/2372 = 89.418212%
+Recall: 2121/2255 = 94.057650%
+F1: 4242/4627 = 91.679274%
+Specificity: 56/307 = 18.241042%
+
+Class: pedestrian
+Reference rows: 148
+Predicted rows: 106
+TP=40 | FP=66 | FN=108 | TN=2348
+Precision: 40/106 = 37.735849%
+Recall: 40/148 = 27.027027%
+F1: 80/254 = 31.496063%
+Specificity: 2348/2414 = 97.265949%
+
+Class: two_wheeler
+Reference rows: 40
+Predicted rows: 21
+TP=2 | FP=19 | FN=38 | TN=2503
+Precision: 2/21 = 9.523810%
+Recall: 2/40 = 5.000000%
+F1: 4/61 = 6.557377%
+Specificity: 2503/2522 = 99.246630%
+
+Class: obstacle
+Reference rows: 119
+Predicted rows: 63
+TP=3 | FP=60 | FN=116 | TN=2383
+Precision: 3/63 = 4.761905%
+Recall: 3/119 = 2.521008%
+F1: 6/182 = 3.296703%
+Specificity: 2383/2443 = 97.544003%
+
+Fractions preserve exact counts; percentages are rounded.
+These metrics describe labeled candidates, not physical object detection recall.
+Reference labels are provisional geometric associations.

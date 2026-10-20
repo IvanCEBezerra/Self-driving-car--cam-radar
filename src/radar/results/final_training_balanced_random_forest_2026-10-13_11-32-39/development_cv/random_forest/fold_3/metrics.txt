@@ -1,0 +1,49 @@
+random_forest — fold 3
+
+Candidate rows: 512
+Accuracy: 343/512 = 66.992188%
+Macro F1: 30.556838%
+Macro recall: 52.281513%
+Minority macro recall: 46.920290%
+
+PER-CLASS RESULTS
+
+Class: vehicle
+Reference rows: 471
+Predicted rows: 335
+TP=322 | FP=13 | FN=149 | TN=28
+Precision: 322/335 = 96.119403%
+Recall: 322/471 = 68.365180%
+F1: 644/806 = 79.900744%
+Specificity: 28/41 = 68.292683%
+
+Class: pedestrian
+Reference rows: 23
+Predicted rows: 94
+TP=18 | FP=76 | FN=5 | TN=413
+Precision: 18/94 = 19.148936%
+Recall: 18/23 = 78.260870%
+F1: 36/117 = 30.769231%
+Specificity: 413/489 = 84.458078%
+
+Class: two_wheeler
+Reference rows: 16
+Predicted rows: 45
+TP=2 | FP=43 | FN=14 | TN=453
+Precision: 2/45 = 4.444444%
+Recall: 2/16 = 12.500000%
+F1: 4/61 = 6.557377%
+Specificity: 453/496 = 91.330645%
+
+Class: obstacle
+Reference rows: 2
+Predicted rows: 38
+TP=1 | FP=37 | FN=1 | TN=473
+Precision: 1/38 = 2.631579%
+Recall: 1/2 = 50.000000%
+F1: 2/40 = 5.000000%
+Specificity: 473/510 = 92.745098%
+
+Fractions preserve exact counts; percentages are rounded.
+These metrics describe labeled candidates, not physical object detection recall.
+Reference labels are provisional geometric associations.

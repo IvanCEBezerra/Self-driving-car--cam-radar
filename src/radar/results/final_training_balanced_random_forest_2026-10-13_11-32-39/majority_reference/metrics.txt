@@ -1,0 +1,49 @@
+Reserved evaluation — development majority-class reference
+
+Candidate rows: 875
+Accuracy: 801/875 = 91.542857%
+Macro F1: 23.896181%
+Macro recall: 25.000000%
+Minority macro recall: 0.000000%
+
+PER-CLASS RESULTS
+
+Class: vehicle
+Reference rows: 801
+Predicted rows: 875
+TP=801 | FP=74 | FN=0 | TN=0
+Precision: 801/875 = 91.542857%
+Recall: 801/801 = 100.000000%
+F1: 1602/1676 = 95.584726%
+Specificity: 0/74 = 0.000000%
+
+Class: pedestrian
+Reference rows: 50
+Predicted rows: 0
+TP=0 | FP=0 | FN=50 | TN=825
+Precision: N/A
+Recall: 0/50 = 0.000000%
+F1: 0/50 = 0.000000%
+Specificity: 825/825 = 100.000000%
+
+Class: two_wheeler
+Reference rows: 22
+Predicted rows: 0
+TP=0 | FP=0 | FN=22 | TN=853
+Precision: N/A
+Recall: 0/22 = 0.000000%
+F1: 0/22 = 0.000000%
+Specificity: 853/853 = 100.000000%
+
+Class: obstacle
+Reference rows: 2
+Predicted rows: 0
+TP=0 | FP=0 | FN=2 | TN=873
+Precision: N/A
+Recall: 0/2 = 0.000000%
+F1: 0/2 = 0.000000%
+Specificity: 873/873 = 100.000000%
+
+Fractions preserve exact counts; percentages are rounded.
+These metrics describe labeled candidates, not physical object detection recall.
+Reference labels are provisional geometric associations.

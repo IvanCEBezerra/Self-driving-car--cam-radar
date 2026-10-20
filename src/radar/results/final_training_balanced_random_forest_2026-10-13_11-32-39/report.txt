@@ -1,0 +1,109 @@
+FINAL RADAR TRAINING AND EVALUATION
+
+Selected model: balanced_random_forest
+Selection priority: minority macro recall, then macro F1, then vehicle recall.
+Selection used four scene-grouped folds in development scenes.
+Reserved evaluation did not participate in model selection.
+
+Processed samples: 404
+Total candidates: 37408
+Development labeled examples: 2562
+Reserved evaluation examples: 875
+Final training examples: 3437
+
+RESERVED-SCENE EVALUATION
+
+Candidate rows: 875
+Accuracy: 236/875 = 26.971429%
+Macro F1: 17.889832%
+Macro recall: 40.361593%
+Minority macro recall: 45.575758%
+
+PER-CLASS RESULTS
+
+Class: vehicle
+Reference rows: 801
+Predicted rows: 207
+TP=198 | FP=9 | FN=603 | TN=65
+Precision: 198/207 = 95.652174%
+Recall: 198/801 = 24.719101%
+F1: 396/1008 = 39.285714%
+Specificity: 65/74 = 87.837838%
+
+Class: pedestrian
+Reference rows: 50
+Predicted rows: 193
+TP=32 | FP=161 | FN=18 | TN=664
+Precision: 32/193 = 16.580311%
+Recall: 32/50 = 64.000000%
+F1: 64/243 = 26.337449%
+Specificity: 664/825 = 80.484848%
+
+Class: two_wheeler
+Reference rows: 22
+Predicted rows: 167
+TP=5 | FP=162 | FN=17 | TN=691
+Precision: 5/167 = 2.994012%
+Recall: 5/22 = 22.727273%
+F1: 10/189 = 5.291005%
+Specificity: 691/853 = 81.008206%
+
+Class: obstacle
+Reference rows: 2
+Predicted rows: 308
+TP=1 | FP=307 | FN=1 | TN=566
+Precision: 1/308 = 0.324675%
+Recall: 1/2 = 50.000000%
+F1: 2/310 = 0.645161%
+Specificity: 566/873 = 64.833906%
+
+Fractions preserve exact counts; percentages are rounded.
+These metrics describe labeled candidates, not physical object detection recall.
+Reference labels are provisional geometric associations.
+
+IMPORTANT DIAGNOSTICS
+vehicle: 801 reference rows from 74 associated annotated instances.
+pedestrian: 50 reference rows from 21 associated annotated instances.
+two_wheeler: 22 reference rows from 8 associated annotated instances.
+obstacle: 2 reference rows from 1 associated annotated instances.
+Few physical instances: generalization evidence is limited.
+
+LARGEST CONFUSIONS
+vehicle -> obstacle: 291/801 = 36.329588% of reference vehicle rows.
+vehicle -> pedestrian: 157/801 = 19.600499% of reference vehicle rows.
+vehicle -> two_wheeler: 155/801 = 19.350811% of reference vehicle rows.
+two_wheeler -> obstacle: 10/22 = 45.454545% of reference two_wheeler rows.
+pedestrian -> two_wheeler: 7/50 = 14.000000% of reference pedestrian rows.
+pedestrian -> obstacle: 6/50 = 12.000000% of reference pedestrian rows.
+pedestrian -> vehicle: 5/50 = 10.000000% of reference pedestrian rows.
+two_wheeler -> pedestrian: 4/22 = 18.181818% of reference two_wheeler rows.
+two_wheeler -> vehicle: 3/22 = 13.636364% of reference two_wheeler rows.
+obstacle -> vehicle: 1/2 = 50.000000% of reference obstacle rows.
+
+LIMITATIONS AND MODEL SCOPE
+- Choosing by minority recall does not guarantee acceptable precision.
+- The selected model is best only under the stated development criterion.
+- The final model uses all ten scenes and has no independent evaluation here.
+- Reserved metrics belong to evaluation_model.joblib, trained on eight scenes.
+- Final training metrics are in-sample and must not be presented as test metrics.
+- Candidate rows can repeat the same object over time or within a frame.
+- Labels are provisional geometric associations, not confirmed return identities.
+- Classification metrics do not measure physical object detection recall.
+- Unlabeled candidates were exported but excluded from supervised training.
+- Scores are not calibrated confidence that an object exists.
+- Impurity feature importance is not causal evidence.
+- Reserved mini scenes were examined in the earlier LIVE project.
+- This is an internal MVP evaluation, not a new external validation.
+
+MAIN ARTIFACTS
+- final_model.joblib: selected model refitted on all labeled mini data.
+- evaluation_model.joblib: model responsible for reserved-scene metrics.
+- model_selection.csv: numerical comparison under the selection criterion.
+- dataset_candidates.csv: every candidate, features and source metadata.
+- dataset_summary.json: availability, categories and missing measurements.
+- development_cv/: pooled and per-fold numerical metrics and predictions.
+- reserved_evaluation/: exact metrics, predictions and scene/kind diagnostics.
+- final_training_in_sample/: explicitly labeled training diagnostics.
+- majority_reference/: a simple reference for contextualizing accuracy.
+- feature_importance.csv: numerical impurity-based feature importance.
+- training_metadata.json: settings, versions, feature order and fingerprints.
